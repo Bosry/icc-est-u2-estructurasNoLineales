@@ -19,6 +19,10 @@ public class IntTree {
         root = insertRecursive(root, value);
         size++;
     }
+
+    public void size(){
+        System.out.println(size);
+    }
     
     private Node<Integer> insertRecursive(Node<Integer> current, int value){
         if (current == null) {
@@ -66,8 +70,6 @@ public class IntTree {
         }
     }
 
-    public void size(){
-        System.out.println(size);
-    }
+    
     
 }
